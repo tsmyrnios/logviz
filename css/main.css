@@ -1,0 +1,47 @@
+@import url(reset.css);
+
+body { font-family: Verdana; font-size:.7em; background-color:black; }
+
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix { display: inline-block; }
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+
+header { height:75px; background-color:black; width:100%; }
+header * { display:inline-block; vertical-align:top; }
+header img#html5-image { width:50px; height:50px; margin:12.5px; float:right; }
+header h1 { margin-left:15px; height:75px; width:220px; font:italic normal bold 16pt/75px verdana; color:White; }
+
+#content { vertical-align: top; background-color:white; }
+#content h3 { background: #666; height:20px; color:White; margin-bottom:5px; font:normal normal bold 12px/20px verdana; text-indent:5px; }
+
+#input { overflow:auto; display:inline-block;vertical-align: top; }
+#input section { margin:10px 10px; border:solid 1px #ccc;}
+#output { overflow:auto; display:inline-block; background-color:#999; float:right;}
+#viewer { height:500px; overflow:auto; margin:10px 10px; background-color:White; }
+footer { overflow:auto; height:100px; background-color:black; }
+
+ul.field-list { list-style-type:none; padding:0 0; margin-bottom:15px; }
+ul.field-list > li { margin:5px 8px; }
+ul.field-list > li.full { width:auto; }
+ul.field-list > li > label { width:125px; display:inline-block; vertical-align:top; padding:3px 2px; }
+ul.field-list > li > span { display:inline-block; vertical-align:top; padding:3px 2px; }
+
+.single-col > li { width:100% !important; }
+.single-col > li > div { margin:5px 8px; padding:0 0; }
+.two-col > li { width: 47.5%; display:inline-block; vertical-align:top; }
+.two-col > li > div { margin:5px 8px; padding:0 0; }
+.three-col > li { width: 32%; display:inline-block; vertical-align:top; }
+.three-col > li > div { margin:5px 8px; padding:0 0; }
+
+.date-picker { width: 75px; }
+.number { width: 50px; }
+a { font:normal normal normal 10px/normal verdana; text-decoration:underline; cursor:hand; }
+a:hover { text-decoration: none; }
+
+p.actions { margin: 10px 10px; text-align:right; }
+
+#date-field, #y-fields { width:200px; }
+#statistics .field-list li { background-color: #eee; }
+#statistics .field-list li label { background-color: #ddd; }
+#progress { font-weight: bold; }

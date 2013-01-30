@@ -1,0 +1,85 @@
+<!DOCTYPE html />
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title></title>
+        <link type="text/css" rel="stylesheet" href="css/themes/base/jquery-ui.min.css" />
+        <link type="text/css" rel="stylesheet" href="css/main.css" />
+<!--[if lt IE 9]>
+<script type="text/javascript">
+window.location = "noie.htm";
+</script>
+<![endif]-->
+        <script type="text/javascript" src="scripts/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="scripts/jquery-ui-1.9.1.min.js"></script>
+        <script type="text/javascript" src="scripts/excanvas.compiled.js"></script>
+        <script type="text/javascript" src="scripts/core.js"></script>
+        <script type="text/javascript" src="scripts/readers.js"></script>
+        <script type="text/javascript" src="scripts/animation.js"></script>
+        <script type="text/javascript" src="scripts/plotter.js"></script>
+        <script type="text/javascript" src="scripts/js-trace.js"></script>
+        <script type="text/javascript" src="scripts/js-trace-ui.js"></script>
+        <script type="text/javascript" src="scripts/timepicker.js"></script>
+        <script type="text/javascript" src="scripts/main.js"></script>
+    </head>
+    <body>
+        <header>
+            <!-- img src="images/html5-white.svg" id="header-image" / -->
+            <h1>Log Analysis Tool</h1>
+            <img src="images/html5-white.svg" id="html5-image" />
+        </header>
+        <div id="content" class="auto-size">
+            <div id="input" class="auto-size" data-auto-w=".3">
+                <section id="graph-section">
+                    <h3>Graph</h3>
+
+                    <ul class="field-list">
+                        <li><label>Data Source:</label><a id="load-files-button">Load Files</a></li>
+                        <li><label>Date Field(X Axis):</label><select id="date-field"></select></li>
+                        <li><label>Plot Data Fields(Y Axis):</label><select id="y-fields" multiple="multiple"></select></li>
+                    </ul>
+                
+                    <ul class="field-list">
+                        <li><label>View Range</label><a id="map">set from selected field data</a></li>
+                        <li><label>X Axis From:</label><span><input type="text" id="start-date" class="date-picker" /></span> <span id="start-time" class="time-picker"></span></li>
+                        <li><label>X Axis To:</label><span><input type="text" id="end-date" class="date-picker" /></span> <span id="end-time" class="time-picker"></span></li>
+                        <li><label>Y Axis</label><span><input type="text" id="min-y" value="1" class="number" /> <label>to</label> <input type="text" id="max-y" value="1.75" class="number" /></span></li>
+                    </ul>
+                    <p class="actions"><button id="start">Start</button> <button id="stop">Stop</button></p>
+                </section>
+                <section id="statistics" data-auto-h=".25" style="display:none">
+                    <h3>Statistics</h3>
+                    <ul class="field-list">
+                        <li class="field"><label>Progress</label><span id="progress"></span></li>
+                        <li class="field"><label>Records Processed</label><span id="records-plotted"></span></li>
+                        <li class="field"><label>Records Empty</label><span id="records-empty"></span></li>
+                        <li class="field"><label>Records Errored</label><span id="records-errored"></span></li>
+                        <li class="field"><label>Records Remaining (est)</label><span id="records-remaining"></span></li>
+                        <li class="field"><label>Records Processed/Second</label><span id="records-per-second"></span></li>
+                        <li class="field"><label>Points Processed/Second:</label><span id="points-per-second"></span></li>
+                        
+                        <li class="field"><label>Started:</label><span id="run-date"></span></li>
+                        <li class="field"><label>Finished:</label><span id="finish-date"></span></li>
+                        <li class="field"><label>Elapsed:</label><span id="elapsed-time"></span></li>
+                    </ul>
+                </section>
+
+                <div id="load-files-dialog" style="display:none;">
+                    <h3>Load Files</h3>
+                    <ul class="field-list">
+                        <li><label>Header File: </label> <input type="file" id="header-file" /></li>
+                        <li><label>Data File: </label> <input type="file" id="files" /></li>
+                    </ul>
+                    <p class="actions"><button id="load">Load</button></p>
+                </div>
+            </div>
+            <div id="output" class="auto-size" data-auto-w=".7">
+                <div id="viewer" data-auto-h=".75">
+                    <canvas id="graph" width="800" height="600" style="border:solid 1px #ccc;"></canvas>
+                </div>
+            </div>
+        </div>
+        <footer>
+        </footer>
+    </body>
+</html>
