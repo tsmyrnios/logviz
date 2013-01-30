@@ -15,6 +15,21 @@
   <defs
      id="defs4365">
     <linearGradient
+       id="linearGradient5063">
+      <stop
+         id="stop5065"
+         style="stop-color:#00dd00;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop5067"
+         style="stop-color:#dddd00;stop-opacity:1"
+         offset="0.5" />
+      <stop
+         id="stop5069"
+         style="stop-color:#dd0000;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
        id="linearGradient4939">
       <stop
          id="stop4941"
@@ -38,6 +53,14 @@
        xlink:href="#linearGradient4939"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(1.0789705,0,0,1.1418537,-2.3717107,-3.0553693)" />
+    <linearGradient
+       x1="32.905403"
+       y1="61.407459"
+       x2="33.018391"
+       y2="4.522387"
+       id="linearGradient5061"
+       xlink:href="#linearGradient5063"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <metadata
      id="metadata4368">
@@ -106,6 +129,6 @@
     <path
        d="M 1.4098656,54.955586 9.6864567,25.575691 16.88349,32.401322 24.080525,15.782393 29.478303,50.20732 37.754893,27.653057 42.432966,38.03989 52.868666,5.0987959 62.944516,38.930189 57.546739,45.755821 52.868666,21.717725 43.87237,46.942888 38.114744,39.820489 28.97115,60.65087 21.487913,35.142114 17.243344,41.304322 11.845567,33.885156 7.8871966,57.923253 z"
        id="path4371"
-       style="fill:url(#linearGradient4945);fill-opacity:1;stroke:#000000;stroke-width:1.79734755px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       style="fill:url(#linearGradient4945);fill-opacity:1;stroke:url(#linearGradient5061);stroke-width:1.79734755px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
   </g>
 </svg>
